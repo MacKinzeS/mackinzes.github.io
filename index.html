@@ -1,0 +1,352 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MacKinze Sears | Instructional Designer</title>
+  <meta name="description" content="Instructional design and learning experience design portfolio of MacKinze Sears.">
+
+  <style>
+    :root {
+      --ink: #242329;
+      --muted: #66616a;
+      --accent: #96536f;
+      --background: #fffdfc;
+      --border: #eee5e8;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.65;
+    }
+
+    .container {
+      max-width: 1080px;
+      margin: auto;
+      padding: 0 28px;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      padding: 24px 0;
+    }
+
+    .brand {
+      color: var(--ink);
+      text-decoration: none;
+      font-family: Georgia, serif;
+      font-size: 26px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+    }
+
+    a { color: var(--accent); }
+
+    .nav-links a {
+      color: var(--ink);
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .nav-links a:hover { color: var(--accent); }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.3fr 0.7fr;
+      gap: 65px;
+      align-items: center;
+      padding: 100px 0;
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    h1, h2, h3 {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-weight: normal;
+      line-height: 1.2;
+    }
+
+    h1 {
+      font-size: clamp(38px, 5vw, 60px);
+      margin: 18px 0 24px;
+    }
+
+    h1 em {
+      color: var(--accent);
+      font-weight: normal;
+    }
+
+    .hero p {
+      max-width: 510px;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 13px 25px;
+      border-radius: 8px;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .button:hover { background: #7b3d57; }
+
+    .portrait {
+      min-height: 350px;
+      background: #f5e9ed;
+      border-radius: 14px;
+      overflow: hidden;
+    }
+
+    .portrait img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      max-height: 440px;
+      object-fit: cover;
+      object-position: center 38%;
+    }
+
+    section { padding: 65px 0; }
+
+    .section-title {
+      font-size: 36px;
+      margin: 0 0 35px;
+    }
+
+    .projects {
+      border-top: 1px solid var(--border);
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .project {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 30px 24px;
+      background: white;
+    }
+
+    .project-number {
+      color: var(--accent);
+      font-size: 13px;
+      letter-spacing: 2px;
+    }
+
+    .project h3 {
+      font-size: 25px;
+      margin: 18px 0 12px;
+    }
+
+    .project p {
+      color: var(--muted);
+      font-size: 14px;
+      min-height: 95px;
+    }
+
+    .project a {
+      font-size: 14px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .project a:hover { text-decoration: underline; }
+
+    .about, .contact {
+      border-top: 1px solid var(--border);
+    }
+
+    .about p, .contact p {
+      max-width: 720px;
+      color: var(--muted);
+    }
+
+    footer {
+      padding: 30px 0;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+    }
+
+    @media (max-width: 750px) {
+      nav { flex-wrap: wrap; }
+      .nav-links { gap: 18px; }
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 65px 0;
+      }
+      .portrait {
+        max-width: 340px;
+        min-height: 300px;
+      }
+      .project-grid { grid-template-columns: 1fr; }
+      .project p { min-height: 0; }
+      section { padding: 50px 0; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <nav>
+        <a class="brand" href="#home">MacKinze Sears</a>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="container">
+      <div class="hero" id="home">
+        <div>
+          <div class="eyebrow">
+            Instructional Designer · Learning Experience Designer
+          </div>
+
+          <h1>Learning experiences that make work <em>simpler.</em></h1>
+
+          <p>
+            I design practical, engaging learning experiences
+            that build skills, solve real workplace challenges,
+            and support employee success.
+          </p>
+
+          <a class="button" href="#projects">Explore My Work</a>
+        </div>
+
+        <div class="portrait">
+          <img src="portrait.jpg" alt="Portrait of MacKinze Sears">
+        </div>
+      </div>
+    </div>
+
+    <section class="projects" id="projects">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+
+        <div class="project-grid">
+
+          <article class="project">
+            <div class="project-number">01 / RESOURCE NAVIGATION</div>
+            <h3>Employee Resource Hub</h3>
+            <p>
+              An interactive learning experience designed
+              to help employees navigate workplace resources
+              and locate important information.
+            </p>
+            <a href="https://mackinzes.github.io/EmployeeResourceHub/story.html"
+               target="_blank" rel="noopener noreferrer">
+              Explore Training ↗
+            </a>
+          </article>
+
+          <article class="project">
+            <div class="project-number">02 / SOFTWARE TRAINING</div>
+            <h3>Excel Troubleshooting</h3>
+            <p>
+              A guided troubleshooting experience that helps
+              learners understand and resolve #REF! errors
+              in Microsoft Excel.
+            </p>
+            <a href="#contact">
+              Project details coming soon
+            </a>
+          </article>
+
+          <article class="project">
+            <div class="project-number">03 / SCENARIO-BASED LEARNING</div>
+            <h3>Employee Burnout</h3>
+            <p>
+              An interactive workplace scenario that helps
+              learners practice prioritizing competing
+              responsibilities.
+            </p>
+            <a href="https://mackinzes.github.io/EmployeeBurnout/story.html"
+               target="_blank" rel="noopener noreferrer">
+              Explore Training ↗
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <p>
+          My background in education has shaped how I approach
+          learning design: start with a real problem, understand
+          what learners need, and create practical experiences
+          that help them succeed.
+        </p>
+        <p>
+          I combine curriculum development, assessment,
+          interactive learning design, and technology
+          to create engaging learning experiences.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2 class="section-title">Let's Connect</h2>
+        <p>
+          Interested in my work? Contact information
+          and my professional résumé will be added here.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      © 2026 MacKinze Sears · Instructional Design Portfolio
+    </div>
+  </footer>
+
+</body>
+</html>
